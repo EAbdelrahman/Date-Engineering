@@ -1,0 +1,13 @@
+name: First WF
+on: push  
+jobs:
+    Pushing_Criteria_1 :
+        build:
+        runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+            
+      - name : Welcome Msg
+        run : echo "Hello data engineers"
